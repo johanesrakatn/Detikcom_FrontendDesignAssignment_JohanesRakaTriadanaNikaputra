@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Registration</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/registration.css" type="text/css">
+  <link rel="stylesheet" href="styles/common.css" type="text/css">
+</head>
+
+<body>
+   <nav class="navbar sticky-top navbar-expand-sm navbar-dark" style="background-color: #007cbd;">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-4" href="#"><img src="./img/detikfinance.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0 mx-5 px-5">
+                <li class="nav-item mx-3">
+                    <a class="nav-link px-3" href="#">About</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link px-3" href="#">Mechanism</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link px-3" href="#">Latest Update</a>
+            </li>
+            <li class="nav-item mx-3 pd-3">
+              <a class="nav-link px-3 active" href="#">Register</a>
+          </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+  <header>
+    <h1>Registrasi</h1>
+  </header>
+  <main>
+    <div class="container-sm py-4 px-4">
+    <form action="">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control bg-secondary" id="nama-perusahaan" placeholder="abcd" name="nama-perusahaan" required>
+        <label for="floatingInput" class="required">Nama Perusahaan</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control bg-secondary" id="email" placeholder="name@example.com" name=email required>
+        <label for="floatingPassword" class="required">Email</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control bg-secondary" id="no-telp" placeholder="081*******" name=no-telp required>
+        <label for="floatingPassword" class="required">Nomor Telepon</label>
+        <div id="telpHelp" class="form-text">Isi hanya angka</div>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea class="form-control bg-secondary" placeholder="(Max. 200 character)" id="floatingTextarea2" style="height: 150px" name=no-telp required></textarea>
+        <label for="floatingTextarea2" class="required">Tentang Perusahaan (Max. 200 character)</label>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="image-upload">
+            <label style="cursor: pointer;" for="file_upload">
+              <img src="" alt="" class="uploaded-image">
+              <div class="h-100">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#007cbd" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                </svg>
+                <h5 class="required">Upload file logo</h5>
+              </div>
+              <input data-required="image" type="file" name="logo" id="logo" class="image-input" data-traget-resolution="image_resolution" value="" required>  
+            </label>
+        </div>
+        </div>
+        <div class="col-8 my-lg-5 py-5">
+          <p>1. Format file: .png, .jpg, .jpeg <br>
+          2. Maksimal ukuran file 200kb<br>
+          3. Hindari menggunakan logo berwarna putih<br>
+          4. Minimal lebar 300px<br>
+          </p>
+        </div>
+      </div>
+      
+      <div class="form-floating mb-3">
+        <div class="input-group">
+          <label tabindex="0" class="form-control bg-secondary">
+            Profil Perusahaan atau Deck (opsional)
+            <input type="file" class="invisible" name="profil" aria-describedby="profilHelp">
+          </label>
+          <span class="input-group-text" >Upload File</span>
+        </div>
+        <div id="profilHelp" class="form-text">Format file .pdf, maksimal size 20mb</div>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control bg-secondary" id="website" placeholder="www.google.com" name="website" aria-describedby="websiteHelp" required>
+        <label for="floatingPassword" class="required">Link website</label>
+        <div id="websiteHelp" class="form-text">Website, Sosial Media, dll. Sertakan protokol URL (https:// atau http://)</div>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan yang berlaku</label>
+      </div>
+      <button type="submit" class="btn btn-submit">Register</button>
+    </form>
+  </div>
+  </main>
+  <footer>
+    <img src="./img/footer.png">
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

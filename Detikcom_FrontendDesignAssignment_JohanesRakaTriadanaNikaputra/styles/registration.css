@@ -1,0 +1,109 @@
+header {
+  background-image: url("../img/bg_registration.png");
+  width: 100%;
+  height: 500px;
+  background-position-x: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-secondary {
+  background-color: #f8f8f8 !important;
+}
+
+.required:after {
+  color: #e32;
+  content: '*';
+  display:inline;
+}
+
+.image-upload {
+  height: 300px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
+.container-sm {
+  margin-top: -10%;
+  max-width: 50% !important;
+  border-radius: 30px !important;
+  background-color: white !important;
+}
+
+header h1 {
+  font-weight: bolder;
+  color: white !important;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  margin: -25px 0 0 -25px;
+}
+svg{
+  margin-top: 60%;
+  margin-bottom: 60%;
+}
+
+.btn-submit{
+  background-color: #007cbd !important;
+  color: white !important;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+form img {
+  margin-bottom: 20px;
+  width: auto;
+  height: auto;
+  max-height: 400px;
+  width: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.image-upload img {
+  height: 100%!important;
+  width: auto!important;
+  border-radius: 0px;
+  margin: 0 auto;
+}
+
+.image-upload input {
+  cursor: pointer;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 43px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.input-group-text{
+  background-color: #007cbd !important;
+  color: white !important;
+  border-radius: 10px !important;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .container-sm {
+    max-width: 100% !important;
+  }
+
+  .float-sm-end {
+    float: right !important;
+  }
+}
